@@ -1,16 +1,17 @@
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',  
   entry: {
     index: './src/index.js',
     home: './src/home.js',
+    website: './src/website.js'
   },
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     title: 'Output Management',
-  //   }),
-  // ],
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+    }),
+  ],
   devServer: {
     static: './dist',
   },

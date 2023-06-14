@@ -1,10 +1,9 @@
 import './reset.css';
-import './style.css';   
+import './style.css';    
+import {website} from './website.js';
 import {home} from './home';
 
-function page() {
-    const content = document.getElementById('content');
-    home(content);
-}
-
-page();
+let cuerpo = document.querySelector('body');
+website(cuerpo);
+let content = document.getElementById('content');
+home(content);
