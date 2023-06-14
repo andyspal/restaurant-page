@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('./Anton-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+:root{
+    --color-primary: #333;
+    --color-secondary: #FFDB58;
+    
+    
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    color: var(--color-primary);
+}
+body{
+    background-color: var(--color-primary);
+
+}
+header{
+    display: flex;
+    padding: 1.5rem 3rem;
+    justify-content: space-between;
+    background-color: var(--color-secondary);
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+nav {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.title-header{
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.button-nav{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+main{
+    display: grid;
+    place-items: center;
+}
+#content{
+    width: 50rem;
+    padding: 3rem 0 0 0;
+    background-color: var(--color-secondary);
+}
+.title-content{
+    text-transform:uppercase;
+    font-size: 2rem;
+    text-align: center;
+    padding:0 0  3rem 0;
+}
+.lomito-image-content{
+    width: 100%;
+    height: auto;
+}
+.text-content{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer{
+    margin-top: 3rem;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-secondary);
+    display: grid;
+    place-items: center;
+   
+}
+
+.copyright-footer{
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
