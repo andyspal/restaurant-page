@@ -81,4 +81,12 @@ const website = (body) => {
     });
 }
 
+const createText = (content, className, textType) => {
+    let text = document.createElement(`${textType}`)
+    text.textContent = `${content}`;
+    text.classList.add(className);
+    return text;
+}
 export {website};
+export {createText};
+

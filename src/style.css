@@ -55,14 +55,17 @@ main{
 }
 #content{
     width: 50rem;
-    padding: 3rem 0 0 0;
-    background-color: var(--color-secondary);
+}
+.home{
+    background-color: #FFDB58;
 }
 .title-content{
     text-transform:uppercase;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    padding:0 0  3rem 0;
+    padding:3rem 0  3rem 0;
+    letter-spacing: .05rem;
+    line-height: 3rem;
 }
 .lomito-image-content{
     width: 100%;
@@ -91,3 +94,72 @@ footer{
     align-items: center;
     gap: .6rem;
 }
+.menu-size-image{
+    width: 100%;
+    height: 100%;
+}
+.size-container{
+    background-color: var(--color-secondary);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.size-title{
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    line-height: 2.0rem;
+    text-transform: uppercase;
+}
+.size-text{
+    font-size: 1.5rem;
+}
+
+.size-text, .size-title{
+    line-height: 2rem;
+    text-align: center;
+}
+
+.menu-div.text{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.flavour-container{
+    margin: 3rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    
+}
+
+.menu-flavour-image{
+    width: 100%;
+    height: auto;
+}
+
+.flavour-text-container{
+    padding: 1rem 0 0 0;
+}
+.flavour-title, .flavour-text{
+    color: #FFDB58;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.flavour-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-bottom: .5rem;
+}
+
+.flavour-text{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+

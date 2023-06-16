@@ -1,6 +1,9 @@
 import lomitoHome from './lomitoHome.jpg';
 
-const home = (content) => {
+const home = () => {
+    let homeContainer = document.createElement('div');
+    homeContainer.classList.add('home');
+    
     let title_content = document.createElement('h2');
     title_content.classList.add('title-content');
     title_content.textContent = 'Unleash your taste buds with our mouthwatering lomitos';
@@ -16,7 +19,8 @@ const home = (content) => {
     let components = [title_content, lomito_home,text_content];
 
     components.forEach(component => {
-        content.appendChild(component);           
+        homeContainer.appendChild(component);           
     });
+    return homeContainer;
 }
 export {home}; 

@@ -5,11 +5,12 @@ module.exports = {
   entry: {
     index: './src/index.js',
     home: './src/home.js',
+    menu: './src/menu.js',
     website: './src/website.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'Restaurant Page',
     }),
   ],
   devServer: {
