@@ -108,4 +108,4 @@ const createFlavourContainer = () =>{
 }
 
 
-export { menu };
+export {menu, createImage, createDiv};

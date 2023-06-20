@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/home.js":
-/*!*********************!*\
-  !*** ./src/home.js ***!
-  \*********************/
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   home: () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _lomitoHome_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lomitoHome.jpg */ \"./src/lomitoHome.jpg\");\n\r\n\r\nconst home = () => {\r\n    let homeContainer = document.createElement('div');\r\n    homeContainer.classList.add('home');\r\n    \r\n    let title_content = document.createElement('h2');\r\n    title_content.classList.add('title-content');\r\n    title_content.textContent = 'Unleash your taste buds with our mouthwatering lomitos';\r\n\r\n    let lomito_home = new Image();\r\n    lomito_home.src = _lomitoHome_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n    lomito_home.classList.add('lomito-image-content');\r\n\r\n    let text_content = document.createElement('p')\r\n    text_content.classList.add('text-content')\r\n    text_content.textContent = \"Order online or visit us\"\r\n\r\n    let components = [title_content, lomito_home,text_content];\r\n\r\n    components.forEach(component => {\r\n        homeContainer.appendChild(component);           \r\n    });\r\n    return homeContainer;\r\n}\r\n \n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   contact: () => (/* binding */ contact)\n/* harmony export */ });\n/* harmony import */ var _lmages_marker_icon_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lmages/marker-icon.png */ \"./src/lmages/marker-icon.png\");\n\r\n\r\nconst contact = () => {\r\n    const contactContainer = document.createElement('div');\r\n    const mapContainer = document.createElement('div');\r\n    mapContainer.setAttribute('id', 'map');\r\n    contactContainer.appendChild(mapContainer);\r\n  \r\n    const map = L.map('map').setView([25.7617, -80.1918], 13);\r\n\r\n    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\r\n      attribution: 'Map data © OpenStreetMap contributors'\r\n    }).addTo(map);\r\n    \r\n    const markerIcon = L.icon({\r\n        iconUrl: _lmages_marker_icon_png__WEBPACK_IMPORTED_MODULE_0__,\r\n        iconSize: [25, 41],\r\n        iconAnchor: [12, 41],\r\n        popupAnchor: [1, -34],\r\n      });\r\n      const marker = L.marker([25.7617, -80.1918], { icon: markerIcon }).addTo(map);\r\n      marker.bindPopup('We are here').openPopup();\r\n  \r\n    return contactContainer;\r\n  };\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
 
 /***/ }),
 
-/***/ "./src/lomitoHome.jpg":
-/*!****************************!*\
-  !*** ./src/lomitoHome.jpg ***!
-  \****************************/
+/***/ "./src/lmages/marker-icon.png":
+/*!************************************!*\
+  !*** ./src/lmages/marker-icon.png ***!
+  \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"3b74e2d3d859876d2734.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/lomitoHome.jpg?");
+eval("module.exports = __webpack_require__.p + \"2b3e1faf89f94a483539.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/lmages/marker-icon.png?");
 
 /***/ })
 
@@ -125,7 +125,7 @@ eval("module.exports = __webpack_require__.p + \"3b74e2d3d859876d2734.jpg\";\n\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/home.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/contact.js");
 /******/ 	
 /******/ })()
 ;

@@ -30,8 +30,11 @@ const website = (body) => {
     const createNav = () =>{
         let nav = document.createElement('nav');
         let homeButton = createButton('home','button-nav');
+        homeButton.classList.add('homeBtn');
         let menuButton = createButton('menu','button-nav')
+        menuButton.classList.add('menuBtn');
         let contactButton = createButton('contact','button-nav');
+        contactButton.classList.add('contactBtn');
     
         let navButtons = [homeButton,menuButton,contactButton];
         navButtons.forEach(navButton => {
@@ -74,7 +77,6 @@ const website = (body) => {
     let footer = createFooter();
 
     let elements = [header,main,footer];
-    let container = document.createElement('div');
 
     elements.forEach(element => {
         body.appendChild(element);
