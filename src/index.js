@@ -1,6 +1,6 @@
-import "./reset.css";
-import "./style.css";
-import "./map.css";
+import './styles/reset.css';
+import './styles/style.css';
+import './styles/map.css';
 import { website } from "./website.js";
 import { home } from "./home.js";
 import { menu } from "./menu.js";
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 let homeBtn = document.querySelector('.homeBtn');
+homeBtn.classList.add('active');
 let menuBtn = document.querySelector('.menuBtn');
 let contactBtn = document.querySelector('.contactBtn');
 
@@ -36,14 +37,26 @@ homeBtn.addEventListener('click', ()=>{
   homeContainer.style.display = 'block';
   menuContainer.style.display = 'none';
   contactContainer.style.display = 'none';
+
+  homeBtn.classList.add('active');
+  menuBtn.classList.remove('active');
+  contactBtn.classList.remove('active');
 })
 menuBtn.addEventListener('click', ()=>{
   homeContainer.style.display = 'none';
   menuContainer.style.display = 'block';
   contactContainer.style.display = 'none';
+
+  homeBtn.classList.remove('active');
+  menuBtn.classList.add('active');
+  contactBtn.classList.remove('active');
 })
 contactBtn.addEventListener('click', ()=>{
   homeContainer.style.display = 'none';
   menuContainer.style.display = 'none';
   contactContainer.style.display = 'flex';
+
+  homeBtn.classList.remove('active');
+  menuBtn.classList.remove('active');
+  contactBtn.classList.add('active');
 })

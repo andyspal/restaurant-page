@@ -2,7 +2,7 @@ const website = (body) => {
     const createHeader = () =>{
         let header = document.createElement('header');
         let navBar = createNav();
-        let title_header = createText('UFO','title-header','h2')
+        let title_header = createText('BURGER','title-header','h2')
         
         header.appendChild(title_header);
         header.appendChild(navBar);

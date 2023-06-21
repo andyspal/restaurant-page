@@ -1,0 +1,30 @@
+.contact{
+    background-color: #FFDB58;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.uber-link, .phone-container{
+    margin: 1rem 2rem;
+}
+.phone-container{
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+.phone-image{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+.phone-number{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 300px) {
+    .phone-container{
+        gap: 0.8rem;
+       
+    }
+}

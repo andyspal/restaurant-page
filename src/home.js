@@ -1,5 +1,5 @@
 import lomitoHome from './lomitoHome.jpg';
-
+import './styles/home.css'
 const home = () => {
     let homeContainer = document.createElement('div');
     homeContainer.classList.add('home');

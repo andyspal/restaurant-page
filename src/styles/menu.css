@@ -1,0 +1,108 @@
+.menu-size-image{
+    width: 100%;
+    height: 100%;
+}
+.size-container{
+    background-color: var(--color-secondary);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.size-title{
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    line-height: 2.0rem;
+    text-transform: uppercase;
+}
+.size-text{
+    font-size: 1.5rem;
+}
+
+.size-text, .size-title{
+    line-height: 2rem;
+    text-align: center;
+}
+
+.menu-div.text{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.flavour-container{
+    width: 100%;
+    margin: 3rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    
+}
+.menu-flavour-image{
+    width: 100%;
+    height: auto;
+}
+.flavour-text-container{
+    padding: 1rem 0 0 0;
+}
+.menu-flavour{
+    min-width: 9rem;
+}
+.flavour-title, .flavour-text{
+    color: #FFDB58;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.flavour-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.flavour-text{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 780px) {
+
+    .size-text, .size-title{
+        line-height: 2.8rem;
+        text-align: center;
+        
+    }
+    
+    .size-text{
+        font-size: 1.5rem;
+    }
+    .size-title{
+        font-size: 2rem;
+    }
+    .flavour-container{
+        grid-template-columns: repeat(2,1fr);
+
+        
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .size-text{
+        font-size: 1.2rem;
+        display: none;
+    }
+    .size-title{
+        font-size: 1.7rem;
+        
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .flavour-container{
+        grid-template-columns: repeat(1,1fr);
+      
+    }
+}

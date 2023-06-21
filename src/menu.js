@@ -5,6 +5,8 @@ import cheddarLomito from './lmages/cheddarLomito.jpg';
 import mexicanLomito from './lmages/mexicanLomito.jpg';
 import vegetarianLomito from './lmages/vegetarianLomito.jpg';
 
+import './styles/menu.css';
+
 import { createText } from "./website";
 
 const menu = () => {
