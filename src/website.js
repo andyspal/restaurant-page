@@ -1,3 +1,5 @@
+import githubSvg from './lmages/github.svg';
+
 const website = (body) => {
     const createHeader = () =>{
         let header = document.createElement('header');
@@ -63,7 +65,7 @@ const website = (body) => {
         link.target = '_blank';
 
         const image = document.createElement('img');
-        image.src = './github.svg';
+        image.src = githubSvg;
         image.alt = 'GitHub';
         image.width = '28';
         image.height = '28';     
