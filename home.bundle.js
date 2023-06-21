@@ -116,17 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   home: () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _lmages_lomitoHome_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lmages/lomitoHome.jpg */ \"./src/lmages/lomitoHome.jpg\");\n/* harmony import */ var _styles_home_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/home.css */ \"./src/styles/home.css\");\n\r\n\r\nconst home = () => {\r\n    let homeContainer = document.createElement('div');\r\n    homeContainer.classList.add('home');\r\n    \r\n    let title_content = document.createElement('h2');\r\n    title_content.classList.add('title-content');\r\n    title_content.textContent = 'Unleash your taste buds with our mouthwatering lomitos';\r\n\r\n    let lomito_home = new Image();\r\n    lomito_home.src = _lmages_lomitoHome_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n    lomito_home.classList.add('lomito-image-content');\r\n\r\n    let text_content = document.createElement('p')\r\n    text_content.classList.add('text-content')\r\n    text_content.textContent = \"Order online or visit us\"\r\n\r\n    let components = [title_content, lomito_home,text_content];\r\n\r\n    components.forEach(component => {\r\n        homeContainer.appendChild(component);           \r\n    });\r\n    return homeContainer;\r\n}\r\n \n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   home: () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _lmages_lomito4_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lmages/lomito4.jpg */ \"./src/lmages/lomito4.jpg\");\n/* harmony import */ var _styles_home_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/home.css */ \"./src/styles/home.css\");\n\r\n\r\nconst home = () => {\r\n    let homeContainer = document.createElement('div');\r\n    homeContainer.classList.add('home');\r\n    \r\n    let title_content = document.createElement('h2');\r\n    title_content.classList.add('title-content');\r\n    title_content.textContent = 'Unleash your taste buds with our mouthwatering lomitos';\r\n\r\n    let lomito_home = new Image();\r\n    lomito_home.src = _lmages_lomito4_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n    lomito_home.classList.add('lomito-image-content');\r\n\r\n    let text_content = document.createElement('p')\r\n    text_content.classList.add('text-content')\r\n    text_content.textContent = \"Order online or visit us\"\r\n\r\n    let components = [title_content, lomito_home,text_content];\r\n\r\n    components.forEach(component => {\r\n        homeContainer.appendChild(component);           \r\n    });\r\n    return homeContainer;\r\n}\r\n \n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
-/***/ "./src/lmages/lomitoHome.jpg":
-/*!***********************************!*\
-  !*** ./src/lmages/lomitoHome.jpg ***!
-  \***********************************/
+/***/ "./src/lmages/lomito4.jpg":
+/*!********************************!*\
+  !*** ./src/lmages/lomito4.jpg ***!
+  \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"3b74e2d3d859876d2734.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/lmages/lomitoHome.jpg?");
+eval("module.exports = __webpack_require__.p + \"fbcb952ab736853bbcff.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/lmages/lomito4.jpg?");
 
 /***/ })
 
